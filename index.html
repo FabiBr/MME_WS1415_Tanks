@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        	<title>Tanks - Menü</title>
+            <meta charset = "UTF-8">
+            <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+            <script type="text/javascript" src="src/optionsmenu.js"></script>
+        </head>
+        <body>
+        	<div class="banner">
+        		<h1>Tanks</h1>
+        	</div>
+        	<div id="content2">
+                <div id="content2size">
+                <table>
+                    <tr>
+                        <td>Name wählen:</td>
+                        <td><input type="text" id="nameOne" class="left" name="Name1" value="" placeholder="Name Spieler 1"></td>
+                        <td><img id="firstColor" src="" width="30" height ="30"></td>
+                        <td><form name="Farbwahl" class="left"> 
+                        <select name="Auswahl"  onchange='document.getElementById("firstColor").style.backgroundColor=this.options[selectedIndex].value' id="colorOne" class="left"> 
+                        <option value="#DD0000">Rot 
+                        <option value="#0044CC">Blau
+                        <option value="#00DD00" selected>Grün 
+                        <option value="#FFD700">Gelb 
+                        
+                        </select> 
+                    </form></td>
+                    </tr>
+                    <tr>
+                        <td>Name wählen:</td>
+                        <td><input type="text" class="left" id="nameTwo" name="Name2" value="" placeholder="Name Spieler 2"></td>
+                        <td>
+                            <img id = "secondColor" src="" width="30" height ="30">
+                        </td>
+                        <td><form name="Farbwahl" class="left"> 
+                        <select name="Auswahl"  onchange='document.getElementById("secondColor").style.backgroundColor=this.options[selectedIndex].value' id="colorTwo" class="left"> 
+                        <option value="#DD0000" selected>Rot
+                        <option value="#0044CC">Blau
+                        <option value="#00DD00">Grün 
+                        <option value="#FFD700">Gelb 
+                          
+                        </select> 
+                    </form></td>
+                    </tr>
+                </table>
+                    </div>
+        		<button id="startgame">Spiel starten</button>
+                <div id="Popup"></div>
+        	</div>
+        </body>
+        <script type="text/javascript" src="src/optionsmenu.js"></script>
+        <script type="text/javascript">
+            OptionsMenu.init();
+        </script>
+
+    </html>

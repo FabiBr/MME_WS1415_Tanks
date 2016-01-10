@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        	<title>Tanks - Menü</title>
+            <meta charset = "UTF-8">
+            <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+            <script src="libs/crafty.js"></script>
+            <script src="libs/jquery-2.0.3.min.js"></script>
+
+            <script src="src/game.js"></script>
+            <script src="src/components.js"></script>
+            <script src="src/scenes.js"></script>
+            <style type="text/css">
+                html {
+                background: url(res/img/bg_desk.jpg) no-repeat center center fixed;
+                background-size: cover;
+                }
+            </style>
+        </head>
+        <body>
+            <table id = "stats">
+                <tr id="statsrow">
+                    <td id = "playerOneName" class="activePlayer">
+                        Player1
+                    </td>
+                    <td>
+                        <img class=pictures src="res/img/icon_menu_angle.png" alt="Schuss" height="100sp" width="100sp">
+                    </td>
+                    <td id="angle">
+                        Winkel: 0
+                    </td>
+                    <td>
+                        <img class=pictures src="res/img/icon_menu_power.png" alt="Schuss"  height="100sp" width="100sp">
+                    </td>
+                    <td id="power">
+                        Stärke: 20
+                    </td>
+                    <td>
+                        <img class=pictures src="res/img/icon_menu_fuel.png" alt="Schuss" height="100sp" width="100sp">
+                    </td>
+                    <td id="fuel">
+                        Strecke: 100
+                    </td>
+                    <td>
+                        <img class=pictures src="res/img/icon_menu_weapon.png" alt="Schuss" height="100sp" width="100sp">
+                    </td>
+                    <td id="gun">
+                        Normales Projektil
+                    </td>
+                    <td id = "playerTwoName" class="pausedPlayer">
+                        Player2
+                    </td>
+                </tr>
+            </table>
+            <div id="stagesize">
+                <table id="stageTable">
+                    <tr>
+                        <td id="stage"></td>
+                    </tr>
+                    <tr>
+                        <td id="Menubuttons">
+                            <div id="buttons">
+                                <div class="button" id="menuebutton">Hauptmenü</div>
+                                <div class="button" id="newbutton">Neustart</div>
+                                <div class="button" id="helpbutton">Hilfe</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <script>
+                window.addEventListener('load', Game.start);
+            </script>
+
+        </body>
+
+    </html>

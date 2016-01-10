@@ -1,0 +1,199 @@
+html *
+{
+    font-family:Comic Sans MS, fantasy;
+}
+
+body{
+    background: url(../img/bg_desk.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner h1{
+    text-align: center;
+    font-size: 400%;
+    color: #dddd99;
+}
+
+#content{
+    margin: 0 auto;
+    width: 600px;
+    height: 100px;
+    margin-top: 200px;
+    background: #FFFFFF;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+}
+
+#startgame{
+    background: none;
+    border-radius: 15px;
+    border-style: dotted;
+    border-color: red;
+    border-width: 2px;
+    margin: 5% 25% 5% 25%;
+    width: 50%;
+    height: 30%;
+    min-height: 20px;
+    font-size: 200%;
+    color: red;
+}
+
+#content2{
+    /*
+    background: url(../img/menubackground.jpg) no-repeat center center fixed;
+    background-size: contain;*/
+    background-color: #ffff99;
+    width: 30%;
+    min-width: 250px;
+    height: 40%;
+    min-height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#content2size table{
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#balken{
+    text-align: center;
+    background-color: #ff0000;
+}
+
+.gamebanner{
+    margin: 0 auto;
+    height: 55px;
+    margin-top: 10px;
+}
+
+.pictures{
+    float:left;
+}
+
+.button{
+    width: auto 100%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+#menuebutton{
+    width: 33%;
+}
+#newbutton{
+    width: 33%;
+}
+#helpbutton{
+    width: 33%;
+}
+
+#statsrow td{
+    width: 10%;
+}
+
+#stagesize{
+    background: url(../img/menubackground.jpg) no-repeat center center fixed;
+    margin: 0 12% 0 10%;
+    width: 78%;
+}
+
+#stage{
+    width: 100%;
+}
+
+#playerOneName{
+    border-radius: 30px;
+    border-style: double;
+    border-width: 3px;
+    border-color: #ff0000;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#playerTwoName{
+    border-radius: 30px;
+    border-style: double;
+    border-width: 3px;
+    border-color: #ffff00;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+.activePlayer{
+  background: #8A360F;
+}
+
+.pausedPlayer{
+  background:none;
+}
+
+#menupicture{
+    float:left;
+    height:auto;
+    width:auto;
+    max-width:80px;
+    max-height:80px;
+}
+
+#menupicture2{
+    height: 30px;
+    width: 60px;
+}
+
+#stats{
+    width: 98%;
+    color: #dddd99;
+}
+
+#colorpicker{
+    float:left;
+}
+
+.left{
+    float:left;
+}
+
+.sizer{
+    width:100px;
+}
+
+#startgame{
+    text-align: center;
+}
+
+#firstColor{
+    background-color: #00dd00
+}
+
+#secondColor{
+    background-color: #dd0000
+}
+
+#Menubuttons{
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    right: 20%;
+}
+
+#Menubuttons button{
+    margin: 0 50px 0 50px;
+}
+
+#Popup{
+    visibility:hidden;
+    margin: 0 auto;
+    width:50%;;
+    height:auto;
+    background: none;
+    color: red;
+}
